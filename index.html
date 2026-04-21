@@ -148,6 +148,18 @@
         </p>
     </div>
 </section>
+<script>
+function toggleSection(element) {
+    let content = element.nextElementSibling;
 
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        element.innerHTML = element.innerHTML.replace("▼", "▲");
+    } else {
+        content.style.display = "none";
+        element.innerHTML = element.innerHTML.replace("▲", "▼");
+    }
+}
+</script>
 </body>
 </html>
