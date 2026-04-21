@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chabi Anand Portfolio</title>
+    <title>Chabi Anand | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
             font-family: Arial;
             background: #0f172a;
             color: white;
-            text-align: center;
         }
+
         header {
-            padding: 40px;
+            padding: 50px 20px;
+            text-align: center;
             background: #020617;
         }
+
         h1 {
             margin: 0;
+            font-size: 40px;
             color: cyan;
         }
-        section {
-            padding: 40px;
+
+        h2 {
+            color: cyan;
         }
+
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
         .card {
             background: #1e293b;
-            margin: 20px auto;
             padding: 20px;
-            width: 80%;
             border-radius: 10px;
+            margin-top: 20px;
         }
+
+        .skills span {
+            display: inline-block;
+            background: cyan;
+            color: black;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
         a {
             color: cyan;
             text-decoration: none;
@@ -39,17 +61,25 @@
 
 <header>
     <h1>Chabi Anand 🚀</h1>
-    <p>Beginner Developer | Learning GitHub</p>
+    <p>Beginner Developer | Learning Web Development</p>
 </header>
-    
+
 <section>
     <h2>About Me</h2>
     <div class="card">
-        <p>I am learning web development...</p>
+        <p>I am a beginner developer learning HTML, CSS, and GitHub. I enjoy building simple and useful web projects.</p>
     </div>
-
-    <button onclick="sayHello()">Click Me</button>
 </section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
 <section>
     <h2>Projects</h2>
     <div class="card">
@@ -65,10 +95,5 @@
     </div>
 </section>
 
-    <script>
-function sayHello() {
-    alert("Hello Chabi! 🚀");
-}
-</script>
 </body>
 </html>
